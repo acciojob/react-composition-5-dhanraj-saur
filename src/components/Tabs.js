@@ -16,12 +16,12 @@ const Tabs = ({ tabs, key }) => {
                         className={`tab ${index === activeTab ? 'active' : ''}`}
                         onClick={() => handleTabClick(index)}
                     >
-                        {tab.title}
+                        {tab.title}  
                     </li>
                 ))}
             </ul>
             <div className="tab-content">
-                {tabs[activeTab] && tabs[activeTab].content}
+              {tabs[activeTab] && tabs[activeTab].content }
             </div>
         </div>
     );
